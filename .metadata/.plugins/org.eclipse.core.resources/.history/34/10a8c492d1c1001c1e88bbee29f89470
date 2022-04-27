@@ -1,0 +1,214 @@
+/*
+ ============================================================================
+ Name        : TP_1.c
+ Author      : Gonzalo Gagliardi
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int menu();
+
+void menuUsuario();
+float get_Float(char* MSJ);
+int getInt(char mensaje[]);
+int menuCargarPrecios ();
+
+int main(void) {
+
+
+	//puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
+	setbuf(stdout, NULL);
+
+	    menuUsuario();
+	return EXIT_SUCCESS;
+}
+
+
+
+void menuUsuario()
+{
+    float x = 0;
+    float y = 0;
+    char seguir = 's';
+    int flagX = 0;
+    int seCalculo = 0;
+    int flagPrecioA = 0;
+    int flagPrecioL = 0;
+    /*float operacionDividir;
+    int factorialresul;
+    int factorialresul2;
+    float pDividir;
+    float pSuma;
+    float pResta;
+    float pMultiplicacion;
+    float pFactorial;
+    float pFactorial2;*/
+
+
+    do{
+
+        switch(menu())
+        {
+            case 1:
+
+
+
+
+                if(flagX == 0)
+                {
+                   x =  get_Float("\nIngrese el primer numero: ");
+                        printf("\nPRIMER NUMERO CARGADO CON EXITO!!\n");
+                    flagX++;
+                    system("pause");//Para que limpie la pantalla
+                }
+
+                    break;
+
+            case 2:
+
+            	switch(menuCargarPrecios())
+            	{
+            	case 1:
+            		x =  get_Float("\nIngrese precio del vuelo con Aerolineas: ");
+            		flagPrecioA = 1;
+            		break;
+            		flagX++;
+            	case 2:
+            		y =  get_Float("\nIngrese precio del vuelo con Latam: ");
+            		flagPrecioL = 1;
+            		break;
+            		flagX++;
+            	case 3:
+
+            		break;
+
+            	default:
+            		printf("Ingrese una opcion valida (entre 1 y 3)\n");
+            		system("pause");
+            		break;
+            	}
+
+
+
+
+
+            break;
+
+            case 3:
+                if(flagPrecioL == 1 && flagPrecioA == 1 )
+                {
+                	printf("%f", x);
+                	printf("%f", y);
+                     /* suma(x, y, &pSuma);
+                      resta( x, y, &pResta);
+                      multiplicacion( x, y, &pMultiplicacion);
+
+                      operacionDividir = division( x, y, &pDividir);
+
+                      factorialresul = factorial( x,  &pFactorial);
+                      factorialresul2 = factorial2( y, &pFactorial2);*/
+
+
+                    flagX++;
+                    seCalculo = 1;
+                 printf("Realizando operaciones..\n");
+                 system("pause");
+                }
+                else
+                {
+                    printf("\nError. Antes de calcular las operaciones debe ingresar los numeros.\n");
+                }
+
+
+            break;
+
+
+
+
+
+            case 5:
+
+                printf("Saliendo de la calculadora.. Adios.\n");
+                seguir = 'n';
+            break;
+
+            default:
+                printf("Opcion incorrecta.. Ingrese una opcion correcta\n");
+            break;
+        }
+
+
+        //system("pause");
+
+
+    }while(seguir == 's');
+
+}
+
+
+int menu()
+{
+    int opcion;
+
+
+        printf("\t");
+        printf("\n\n\n**Menu de opciones**\n\n");
+        printf("\n1. Ingresar Kilómetros: ");
+        printf("\n2. Ingresar Precio de Vuelos: ");
+        printf("\n3. Calcular todos los costos: ");
+        printf("\n4. Informar Resultados.");
+        printf("\n5. Carga forzada de datos");
+        printf("\n6. Salir.");
+        printf("\n\nIndique opcion: ");
+        //__fpurge(stdin);
+        fflush(stdin);
+        scanf("%d",&opcion);
+
+        return opcion;
+}
+
+
+float get_Float(char* MSJ)
+{
+    float numero = 0;
+
+    printf(MSJ);
+    scanf("%f", &numero);
+
+    return numero;
+}
+
+int getInt(char mensaje[])
+{
+    int auxiliar;
+    printf("%s",mensaje);
+    scanf("%d",&auxiliar);
+    return auxiliar;
+}
+
+int menuCargarPrecios ()
+{
+    int opcion;
+
+
+        printf("\t");
+        printf("\n\n\n**Menu de opciones**\n\n");
+        printf("\n1. Precio vuelo Aerolíneas: ");
+        printf("\n2. Precio vuelo Latam: ");
+        printf("\n3. Salir.");
+        printf("\n\nIndique opcion: ");
+        //__fpurge(stdin);
+        fflush(stdin);
+        scanf("%d",&opcion);
+
+        return opcion;
+}
+
+
+
+

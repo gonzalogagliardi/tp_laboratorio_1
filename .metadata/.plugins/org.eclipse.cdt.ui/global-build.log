@@ -1,0 +1,81 @@
+18:15:22 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu.o" "..\\src\\menu.c" 
+..\src\menu.c: In function 'menuUsuario':
+..\src\menu.c:175:75: error: expected ';' before 'printf'
+              printf("\n-------------------------------------------------")
+                                                                           ^
+                                                                           ;
+                 printf("Precio Latam = %.2f", y);
+                 ~~~~~~                                                     
+..\src\menu.c:59:9: warning: variable 'seCalculo' set but not used [-Wunused-but-set-variable]
+     int seCalculo = 0;
+         ^~~~~~~~~
+18:16:04 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu.o" "..\\src\\menu.c" 
+..\src\menu.c: In function 'menuUsuario':
+..\src\menu.c:59:9: warning: variable 'seCalculo' set but not used [-Wunused-but-set-variable]
+     int seCalculo = 0;
+         ^~~~~~~~~
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" "src\\input.o" "src\\menu.o" 
+Info: Nothing to build for TP_1
+18:19:11 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu.o" "..\\src\\menu.c" 
+..\src\menu.c: In function 'menuUsuario':
+..\src\menu.c:59:9: warning: variable 'seCalculo' set but not used [-Wunused-but-set-variable]
+     int seCalculo = 0;
+         ^~~~~~~~~
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" "src\\input.o" "src\\menu.o" 
+Info: Nothing to build for TP_1
+18:21:41 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu.o" "..\\src\\menu.c" 
+..\src\menu.c: In function 'menuUsuario':
+..\src\menu.c:59:9: warning: variable 'seCalculo' set but not used [-Wunused-but-set-variable]
+     int seCalculo = 0;
+         ^~~~~~~~~
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" "src\\input.o" "src\\menu.o" 
+C:/Program Files/CodeBlocks/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:21:43 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" "src\\input.o" "src\\menu.o" 
+22:50:47 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu.o" "..\\src\\menu.c" 
+..\src\menu.c: In function 'menuUsuario':
+..\src\menu.c:59:9: warning: variable 'seCalculo' set but not used [-Wunused-but-set-variable]
+     int seCalculo = 0;
+         ^~~~~~~~~
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" "src\\input.o" "src\\menu.o" 
+C:/Program Files/CodeBlocks/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:50:53 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" "src\\input.o" "src\\menu.o" 
+Info: Nothing to build for TP_1
+22:53:01 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu.o" "..\\src\\menu.c" 
+..\src\menu.c: In function 'menuUsuario':
+..\src\menu.c:59:9: warning: variable 'seCalculo' set but not used [-Wunused-but-set-variable]
+     int seCalculo = 0;
+         ^~~~~~~~~
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" "src\\input.o" "src\\menu.o" 
+C:/Program Files/CodeBlocks/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:53:03 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" "src\\input.o" "src\\menu.o" 
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+15:51:22 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu.o" "..\\src\\menu.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" "src\\input.o" "src\\menu.o" 
+15:56:45 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu.o" "..\\src\\menu.c" 
+gcc -o TP_1.exe "src\\TP_1.o" "src\\funciones.o" "src\\input.o" "src\\menu.o" 

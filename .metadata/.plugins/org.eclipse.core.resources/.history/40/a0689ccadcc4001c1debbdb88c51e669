@@ -1,0 +1,48 @@
+/*
+ * menu.c
+ *
+ *  Created on: 25 abr. 2022
+ *      Author: Principal
+ */
+#include "menu.h"
+
+int menuCargarPrecios ()
+{
+    int opcion;
+
+
+        printf("\t");
+        printf("\n\n\n**Menu de opciones**\n\n");
+        printf("\n1. Precio vuelo Aerolíneas: ");
+        printf("\n2. Precio vuelo Latam: ");
+        printf("\n3. Salir.");
+        printf("\n\nIndique opcion: ");
+        //__fpurge(stdin);
+        fflush(stdin);
+        scanf("%d",&opcion);
+
+        return opcion;
+}
+
+
+
+int menu()
+{
+    int opcion;
+
+
+        printf("\t");
+        printf("\n\n\n**Menu de opciones**\n\n");
+        printf("\n1. Ingresar Kilómetros: ");
+        printf("\n2. Ingresar Precio de Vuelos: ");
+        printf("\n3. Calcular todos los costos: ");
+        printf("\n4. Informar Resultados.");
+        printf("\n5. Carga forzada de datos");
+        printf("\n6. Salir.");
+        printf("\n\nIndique opcion: ");
+        //__fpurge(stdin);
+        fflush(stdin);
+        scanf("%d",&opcion);
+
+        return opcion;
+}
