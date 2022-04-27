@@ -3101,3 +3101,4 @@
   <categories xmi:id="_DAw5HcZcEeyRvphzpZE6fA" elementId="org.eclipse.cdt.debug.ui.category.reverseDebugging" name="Reverse Debugging Commands" description="Set of commands for Reverse Debugging"/>
   <categories xmi:id="_DAw5HsZcEeyRvphzpZE6fA" elementId="com.genuitec.eclipse.inlinesearch.commands.category" name="Inline Search"/>
   <categories xmi:id="_DAw5H8ZcEeyRvphzpZE6fA" elementId="org.eclipse.cdt.debug.ui.category.tracing" name="Tracing Commands" description="Category for Tracing Commands"/>
+</application:Application>
