@@ -5,6 +5,7 @@
  *      Author: Maru
  */
 
+
 #include "Passenger.h"
 #include <ctype.h>
 #include <stdio.h>
@@ -32,7 +33,7 @@ Passenger* Passenger_new()
 }
 
 
-Passenger* Passenger_newParametros(char* idStr,char* nombreStr,char* tipoPasajeroStr, char* apellidoStr, char* precioStr, char* codigoVueloStr)
+Passenger* Passenger_newParametros(char* idStr,char* nombreStr,char* apellidoStr, char* precioStr, char* codigoVueloStr,char* tipoPasajeroStr, char* estadoVueloStr)
 {
 	Passenger* newPassenger;
 
@@ -304,28 +305,48 @@ int menu()
 
 
 
-int buscarMayorId(LinkedList* pArrayPassenger, int* id)
+int buscarMayorId(LinkedList* pArrayPassenger)
 {
 	int todoOk = 0;
+	int id;
 	Passenger* auxPass = NULL;
-	int mayor;
+	int mayor = 0;
 
 		if(pArrayPassenger != NULL)
 		{
 			for(int i = 0; i < ll_len(pArrayPassenger); i++)
 			{
 				auxPass = (Passenger*) ll_get(pArrayPassenger, i);
-					if(i == 0 || auxPass->id)
+				Passenger_getId(auxPass, &id);
+
+					if(i == 0 || id > mayor)
 					{
-						mayor = auxPass->id
+						mayor = id;
 					}
 			}
 
-			*id = mayor + 1;
-			todoOk = 1;
+
+
 		}
-	return todoOk;
+	return mayor;
 }
 
+int buscarPasajerosId(LinkedList* pArrayListEmployee, int id)
+{
 
+	int auxId;
+	int index = -1;
+	Passenger auxPass;
 
+		for (int i=0; i < ll_len(pArrayListEmployee); i++)
+		{
+			auxPass = (Passenger*)ll_get(pArrayListEmployee, i);
+			Passenger_getId(auxPass, &auxId);
+
+			if(Passenger_getId(auxPass, &auxId) &&auxId == id)
+			{
+				index = i;
+			}
+		}
+	return index;
+}

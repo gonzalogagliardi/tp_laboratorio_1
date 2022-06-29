@@ -15,13 +15,14 @@ typedef struct
 	char apellido[50];
 	float precio;
 	int tipoPasajero;
-	char codigoVuelo[7];
+	char codigoVuelo[4];
 	int isEmpty;
+	int estadoVuelo;
 
 }Passenger;
 
-Passenger* Passenger_new();
-Passenger* Passenger_newParametros(char* idStr,char* nombreStr,char* tipoPasajeroStr, char* apellidoStr, char* precioStr, char* codigoVueloStr);
+Passenger* Passenger_new();  // HACER NEW PARAMETROS CON CODIGO DE VUELO!
+Passenger* Passenger_newParametros(char* idStr,char* nombreStr,char* apellidoStr, char* precioStr, char* codigoVueloStr,char* tipoPasajeroStr. char* estadoVueloStr);
 void Passenger_delete();
 
 int Passenger_setId(Passenger* this,int id);
@@ -44,8 +45,8 @@ int Passenger_getPrecio(Passenger* this,float* precio);
 
 int menu();
 
-int buscarMayorId(LinkedList* pArrayPassenger, int* id);
+int buscarMayorId(LinkedList* pArrayPassenger);
 //getters 2: 25:00 clase 27/05
-
+int buscarPasajerosId(LinkedList* pArrayListEmployee, int id);
 
 #endif /* PASSENGER_H_ */

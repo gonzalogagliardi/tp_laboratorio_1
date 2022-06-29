@@ -23,10 +23,10 @@
 int main()
 {
 	setbuf(stdout, NULL);
-
+	printf("Gola");
     int option = 0;
 
-    LinkedList* listaPasajeros = ll_newLinkedList();
+   /* LinkedList* listaPasajeros = ll_newLinkedList();
     do{
         switch(option)
         {
@@ -34,7 +34,7 @@ int main()
                 controller_loadFromText("data.csv",listaPasajeros);
                 break;
         }
-    }while(option != 10);
+    }while(option != 10);*/
     return 0;
 }
 
